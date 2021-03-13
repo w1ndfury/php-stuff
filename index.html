@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>My Form</title>
+</head>
+    <body>
+        <div class="container">
+            <h2>My Form</h2>
+            <form name="client" id="client-form" method="POST">
+                <!-- NAME -->  
+                Name: <input type="text" name="name" value="" placeholder="Panos">
+                <span class="error"></span>
+                <br><br>
+                <!-- EMAIL -->
+                E-mail: <input type="text" name="email" value="" placeholder="panos@gmail.com">
+                <span class="error"></span>
+                <br><br>
+                <!-- WEBSITE -->
+                Website: <input type="text" name="website" value="" placeholder="www.panos.com">
+                <span class="error"></span>
+                <br><br>
+                <input type="submit" id ="submit" name="submit" value="submit">  
+            </form>
+
+            <hr></hr>
+
+            <div class="display-all">
+                <h2>Display All</h2>
+                <!-- GET ALL -->
+                <input type="submit" id ="display" name="submit" value="Display">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Website</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="responsecontainer"></tbody>
+                </table>  
+            </div>
+
+            <hr></hr>
+        </div>
+        <!-- SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- load javascript files -->
+        <script src="js/form.js" type="text/javascript"></script> 
+        <script src="js/getAll.js" type="text/javascript"></script>           
+    </body>
+</html>
