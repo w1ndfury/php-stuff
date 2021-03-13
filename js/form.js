@@ -22,7 +22,7 @@ $(document).ready(function() {
                 cache       : false
             })
     
-            // using the done promise callback
+            // using the done promise callback !
             .done(function(data) {
                 // log data to the console
                 console.log(JSON.stringify(data)); 
